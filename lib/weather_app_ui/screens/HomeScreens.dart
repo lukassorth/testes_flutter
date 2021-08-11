@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePageScreen extends StatefulWidget {
-  HomePageScreen({Key? key}) : super(key: key);
+class WeatherHomePage extends StatefulWidget {
+  WeatherHomePage({Key? key}) : super(key: key);
 
   @override
-  _HomePageScreenState createState() => _HomePageScreenState();
+  _WeatherHomePageState createState() => _WeatherHomePageState();
 }
 
-class _HomePageScreenState extends State<HomePageScreen> {
+class _WeatherHomePageState extends State<WeatherHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
