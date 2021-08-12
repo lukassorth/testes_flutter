@@ -29,7 +29,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
           children: [
             Text(
               _smiley,
-              style: TextStyle(fontSize: 100),
+              style: TextStyle(fontSize: 250),
             ),
             const SizedBox(height: 24),
             Text(
@@ -53,7 +53,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
   }
 
   void _changeWeather() {
-    final _counter = Random().nextInt(2);
+    final _counter = Random().nextInt(6);
 
     setState(() {
       switch (_counter) {
@@ -63,9 +63,29 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
           _backgroundColor = Colors.blueAccent.shade700;
           break;
         case 1:
-          _smiley = '🥶';
-          _graus = _nextNumber(min: -20, max: 0);
-          _backgroundColor = Colors.blueAccent.shade700;
+          _smiley = '🥵';
+          _graus = _nextNumber(min: 30, max: 45);
+          _backgroundColor = Colors.red;
+          break;
+        case 2:
+          _smiley = '🌥️';
+          _graus = _nextNumber(min: 5, max: 20);
+          _backgroundColor = Colors.deepPurple;
+          break;
+        case 3:
+          _smiley = '🌧️';
+          _graus = _nextNumber(min: 5, max: 20);
+          _backgroundColor = Colors.purple;
+          break;
+        case 4:
+          _smiley = '❄️';
+          _graus = _nextNumber(min: -5, max: 3);
+          _backgroundColor = Colors.blueAccent;
+          break;
+        case 5:
+          _smiley = '🌤️';
+          _graus = _nextNumber(min: 20, max: 30);
+          _backgroundColor = Colors.redAccent;
           break;
       }
     });
