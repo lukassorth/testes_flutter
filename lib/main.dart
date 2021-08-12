@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:testes_flutter/weather_app_ui/screens/HomeScreens.dart';
+import 'package:testes_flutter/floating_button/FloatingHomeButton.dart';
+// * import 'package:testes_flutter/weather_app_ui/HomeScreens.dart';
 // * import 'package:testes_flutter/botton_nav_bar/componnets/NavBarBotton.dart';
 
 void main() {
@@ -39,6 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // ? return NavBarBotton();
 
     // * Weather App Ui
-    return WeatherHomePage();
+    // ?return WeatherHomePage();
+
+    // * Floating Action Button
+    return FloatingHomeScreen();
   }
 }
