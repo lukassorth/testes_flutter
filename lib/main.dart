@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:testes_flutter/mercadopago/mercadopago_sdk.dart';
 // import 'package:testes_flutter/floating_button/FloatingHomeButton.dart';
 // import 'package:testes_flutter/weather_app_ui/HomeScreens.dart';
-import 'package:testes_flutter/botton_nav_bar/componnets/NavBarBotton.dart';
+// import 'package:testes_flutter/botton_nav_bar/componnets/NavBarBotton.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // ! cuidar com o nome das paginas para importar no return!!!!
 
     // * NavBarBotton é um widget com telas na parte inferior (Home, Favoritos, Chat, Conta)
-    return NavBarBotton();
+    // ?return NavBarBotton();
 
     // * Weather App Ui
     // ?return WeatherHomePage();
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // * Floating Action Button
     // ?return FloatingHomeScreen();
 
-    // *
-    //return
+    // * Página de pagamento Mercado Pago
+    return MercadoPagoCheckoutPage();
   }
 }
