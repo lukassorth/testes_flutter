@@ -41,12 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // ?return NavBarBotton();
 
     // * Weather App Ui
-    // ?return WeatherHomePage();
+    return WeatherHomePage();
 
     // * Floating Action Button
     // ?return FloatingHomeScreen();
 
     // * Página de pagamento Mercado Pago
-    return MercadoPagoCheckoutPage();
+    // return MercadoPagoCheckoutPage();
   }
 }
